@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python库管理器 - ikdxhz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        }
+        .download-btn {
+            background: linear-gradient(45deg, #4F46E5, #6366F1);
+            transition: transform 0.2s;
+        }
+        .download-btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="gradient-bg text-white py-6">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold mb-2">Python库管理器</h1>
+            <p class="text-xl opacity-90">版本 1.87 | 作者：ikdxhz</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- 功能亮点 -->
+        <section class="mb-8 bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">✨ 功能特性</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="flex items-center p-4 bg-blue-50 rounded-lg">
+                    <svg class="w-8 h-8 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                    <div>
+                        <h3 class="font-semibold">多源加速</h3>
+                        <p class="text-sm text-gray-600">支持阿里云、清华等9个国内镜像源</p>
+                    </div>
+                </div>
+                <div class="flex items-center p-4 bg-green-50 rounded-lg">
+                    <svg class="w-8 h-8 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                    </svg>
+                    <div>
+                        <h3 class="font-semibold">智能批量更新</h3>
+                        <p class="text-sm text-gray-600">多线程并发更新，支持失败重试机制</p>
+                    </div>
+                </div>
+                <div class="flex items-center p-4 bg-purple-50 rounded-lg">
+                    <svg class="w-8 h-8 text-purple-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                    </svg>
+                    <div>
+                        <h3 class="font-semibold">依赖关系检测</h3>
+                        <p class="text-sm text-gray-600">卸载前自动检测依赖链，防止误删</p>
+                    </div>
+                </div>
+                <div class="flex items-center p-4 bg-pink-50 rounded-lg">
+                    <svg class="w-8 h-8 text-pink-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
+                    </svg>
+                    <div>
+                        <h3 class="font-semibold">环境自检</h3>
+                        <p class="text-sm text-gray-600">自动检测Python/pip版本及网络连接</p>
+                    </div>
+                </div>
+                <div class="flex items-center p-4 bg-indigo-50 rounded-lg">
+                    <svg class="w-8 h-8 text-indigo-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1.5M14 4l2-1.5M6 7l-2 1M6 7l-2-1m0 2.5M6 7v2.5m6 10l-2 1m0 0l-2-1m2 1v-2.5M6 18l-2-1m0 0l-2 1m2-1v-2.5M18 18l2-1m-2 1l2 1m-2-1v-2.5"/>
+                    </svg>
+                    <div>
+                        <h3 class="font-semibold">交互友好</h3>
+                        <p class="text-sm text-gray-600">彩色终端输出，支持随机一言彩蛋</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 下载区域 -->
+        <section class="mb-8 text-center">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h2 class="text-2xl font-bold mb-4 text-gray-800">立即下载</h2>
+                <p class="mb-6 text-gray-600">当前版本：v1.87 | 更新日期：2023-12-20</p>
+                <a href="#您的下载链接" class="download-btn text-white px-8 py-3 rounded-full inline-block font-semibold shadow-lg">
+                    ↓ 下载程序
+                </a>
+                <p class="mt-4 text-sm text-gray-500">文件大小：约 15KB | 支持 Windows/macOS/Linux</p>
+            </div>
+        </section>
+
+        <!-- 更新日志 -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">📝 更新日志</h2>
+            <div class="space-y-4">
+                <div class="border-l-4 border-blue-500 pl-4">
+                    <h3 class="font-semibold">v1.87 (最新)</h3>
+                    <ul class="list-disc pl-5 text-gray-600">
+                        <li>新增网络连接检测功能</li>
+                        <li>优化多线程更新逻辑</li>
+                        <li>修复已知的依赖检测问题</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 注意事项 -->
+        <section class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-lg">
+            <h3 class="font-semibold mb-2">⚠️ 使用须知</h3>
+            <ul class="list-disc pl-5 text-gray-600">
+                <li>需要Python 3.6.1或更高版本</li>
+                <li>首次使用建议切换国内镜像源加速下载</li>
+                <li>卸载操作前请确认依赖关系</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2023 ikdxhz. 遵循 MIT 开源协议</p>
+            <p class="mt-2 text-sm text-gray-400">问题反馈：support@example.com</p>
+        </div>
+    </footer>
+</body>
+</html> 
