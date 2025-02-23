@@ -73,7 +73,7 @@
                     </svg>
                     <div>
                         <h3 class="font-semibold">交互友好</h3>
-                        <p class="text-sm text-gray-600">彩色终端输出，支持随机一言彩蛋</p>
+                        <p class="text-sm text-gray-600">清晰的进度提示，支持随机一言彩蛋功能</p>
                     </div>
                 </div>
             </div>
@@ -84,10 +84,31 @@
             <div class="bg-white rounded-lg shadow-md p-8">
                 <h2 class="text-2xl font-bold mb-4 text-gray-800">立即下载</h2>
                 <p class="mb-6 text-gray-600">当前版本：v1.87 | 更新日期：2023-12-20</p>
-                <a href="#您的下载链接" class="download-btn text-white px-8 py-3 rounded-full inline-block font-semibold shadow-lg">
-                    ↓ 下载程序
-                </a>
-                <p class="mt-4 text-sm text-gray-500">文件大小：约 15KB | 支持 Windows/macOS/Linux</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
+                    <!-- EXE版本 -->
+                    <a href="#EXE下载链接" class="download-btn text-white px-4 py-3 rounded-lg inline-block font-semibold shadow-lg">
+                        🪟 EXE 程序
+                        <span class="block text-xs mt-1 opacity-80">Windows 一键版</span>
+                    </a>
+                    
+                    <!-- PY版本 -->
+                    <a href="https://pan.hefamily.net/s/5lWPT6" class="download-btn text-white px-4 py-3 rounded-lg inline-block font-semibold shadow-lg" target="_blank" rel="noopener noreferrer">
+                        🐍 源码文件
+                        <span class="block text-xs mt-1 opacity-80">通用Python版本</span>
+                    </a>
+                    
+                    <!-- 旧版保持兼容 -->
+                    <a href="#您的下载链接" class="download-btn text-white px-4 py-3 rounded-lg inline-block font-semibold shadow-lg">
+                        📦 全部版本
+                        <span class="block text-xs mt-1 opacity-80">查看历史版本</span>
+                    </a>
+                </div>
+
+                <p class="mt-4 text-sm text-gray-500">
+                    <span class="block">EXE文件大小：约 5MB (内置Python环境)</span>
+                    <span class="block">PY文件大小：约 15KB (需Python 3.6+)</span>
+                </p>
             </div>
         </section>
 
